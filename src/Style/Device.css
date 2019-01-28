@@ -1,0 +1,61 @@
+.sweet-loading {
+    justify-content: center;
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+
+.example-appear {
+    transform: translateX(-200%);
+}
+.example-enter {
+    transform: translateY(-200%);
+}
+.example-appear-active {
+    animation: example-appear-in 300ms ease-in forwards;
+}
+.example-enter-active {
+    animation: example-in 300ms ease-in forwards;
+}
+
+.example-leave {
+    transform: translateX(0%);
+}
+  
+.example-leave-active {
+    animation: example-out 300ms ease-out forwards;
+}
+  
+@keyframes example-appear-in {
+    from {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes example-in {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes example-out {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+

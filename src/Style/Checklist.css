@@ -1,0 +1,159 @@
+body {
+    transition: background-color 0.3s;
+}
+
+.image {
+    max-width: 100%;
+}
+
+
+
+.circle-picker {
+    margin-top: 25px;
+}
+
+.ColorExample {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+    margin-top: 5px;
+}
+
+
+
+
+#sample-canvas {
+    max-width: 100%;
+    width: 100%;
+}
+
+.ImgButton,
+.VideoButton,
+.GltfButton {
+    justify-content: center;
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+ 
+ .Component {
+     margin-bottom: 15px;
+     margin-top: 5px;
+     background-color: #f3f3f3; 
+     border: 1px solid #c2c2c2;
+     -webkit-box-shadow: 9px 10px 18px 0px rgba(0,0,0,0.56);
+     -moz-box-shadow: 9px 10px 18px 0px rgba(0,0,0,0.56);
+     box-shadow: 9px 10px 18px 0px rgba(0,0,0,0.56);
+ }
+
+ .gltf-container {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+
+ .action-appear {
+    
+    transform: translateX(-100%);
+}
+
+.action-appear-active {
+    animation: action-in 400ms ease-in forwards;
+}
+
+.action-leave {
+    transform: translateX(0%);
+}
+  
+.action-leave-active {
+    animation: action-out 300ms ease-out forwards;
+}
+
+.MediaElements-enter {
+    transform: translateY(100%);
+}
+
+.MediaElements-enter-active {
+    animation: media-in 400ms ease-in forwards;
+}
+
+.MediaElements-leave {
+    transform: translateY(0%)
+}
+
+.MediaElements-leave-active {
+    transform: media-out 300ms ease-out forwards;
+}
+  
+
+@keyframes action-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes action-out {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes media-in {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes media-out {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+
+ @media only screen and (max-width: 769px) {
+    .Save {
+        float: right;
+        right: 0%;
+        position: relative;
+   
+   
+    }
+   
+    .Cancel {
+        float: left;
+        left: 0%;
+        position: relative;
+        margin-left: 0px;
+    }
+    body {
+        padding-top: 20px;
+    }
+ }
+
+
+ @media only screen and (max-width: 767px) {
+    .circle-picker {
+        margin-top: 0px;
+
+    }
+ }

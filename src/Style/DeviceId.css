@@ -1,0 +1,69 @@
+.media-left {
+    height: 100%;
+    background-color: brown;
+    min-width: 50px;
+    
+    border: 0px solid #000000;
+}
+
+.DeviceIdContainer {
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.4s;
+    
+    border: 1px solid #b3b3b3;
+    padding: 2px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 7px 6px 29px -11px rgba(0,0,0,1);
+    -moz-box-shadow: 7px 6px 29px -11px rgba(0,0,0,1);
+    box-shadow: 7px 6px 29px -11px rgba(0,0,0,1);
+}
+
+.DeviceIdContainer:hover {
+    background-color: rgb(174, 174, 250);
+
+}
+
+.media-body {
+    text-align: justify;    
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.GlyphiconArrow {
+   font-size: 30px;
+   color: rgb(0, 0, 0);
+   
+   border-radius: 200px 200px 200px 200px;
+  
+}
+
+.btn {
+    color: black;
+    font-size: 18px;
+}
+
+.GlyphiconButton {
+    font-size: 18px;
+    margin-right: 4px;
+    color: white;
+    background-color: black;
+    border-radius: 200px 200px 200px 200px;
+    border: 4px solid #000000;
+}
+
+.RotateLeft,
+.RotateRight{
+    width: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Label {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .Container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+ }
